@@ -1,20 +1,14 @@
-<h1>Admin Panel</h1>
-<!-- <ul>
-    <li class="d-flex justify-content-center align-items-baseline">
-        <span class="material-symbols-outlined">
-            account_circle
-            </span>
-                    <span class="data">item1</span>
-    </li>
+<h1 class="flat">Admin Panel</h1>
 
-</ul> -->
-<div >
-    <ul class="flex justify-content-center align-items-baseline">
-        <li>
-            <span class="material-symbols-outlined">
-                account_circle
-                </span>
-                        <span class="flex" >item1</span>
-        </li>
-    </ul>
-</div>
+<ul>
+  @for (item of items; track item) {
+  <li>
+    <!-- [routerLink]="item.link" -->
+    <!-- <a  ></a> -->
+    <span class="icon material-symbols-outlined">
+      {{ item.icon }}
+    </span>
+    <span class="data"> {{ item.title }} </span>
+  </li>
+  }
+</ul>
