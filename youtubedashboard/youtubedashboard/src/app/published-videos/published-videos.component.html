@@ -1,0 +1,26 @@
+<p>published-videos works!</p>
+<div class="divider"></div>
+@for (item of items; track items) {
+<section>
+  <img src="{{ item.image }}" alt="" />
+  <div class="content">
+    <h5>{{ item.videoTitle | limit : 29 }}</h5>
+    <div class="views">
+      <span class="material-symbols-outlined"> equalizer </span>
+      <span>{{ item.views }}</span>
+    </div>
+    <div class="comments">
+      <span class="material-symbols-outlined"> chat </span>
+      <span>{{ item.comments }}</span>
+    </div>
+    <div class="likes">
+      <span class="material-symbols-outlined"> thumb_up </span>
+      <span>{{ item.likes }}</span>
+    </div>
+  </div>
+</section>
+<div class="links">
+  <a routerLink="content">Go to videos</a>
+</div>
+
+}

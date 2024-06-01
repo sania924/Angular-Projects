@@ -1,0 +1,18 @@
+:host {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  // margin:auto;
+  max-width: 1000px;
+  gap: 1.5rem 2rem;
+}
+
+app-audience-chart {
+  grid-row: 2/4;
+  height: max-content;
+}
+
+app-subscriber-chart,
+app-revenue-chart {
+  grid-column: 2/4;
+}

@@ -1,0 +1,43 @@
+<h3 class="text-center">Latest video Performance</h3>
+<img [src]="thumbnail" alt="" />
+<h4>{{ data.videoTitle | limit : 2 }}</h4>
+<div class="video-data">
+  <div class="views">
+    <span class="material-symbols-outlined"> equalizer </span>
+    <span>{{ data.views }}</span>
+  </div>
+  <div class="views">
+    <span class="material-symbols-outlined"> chat </span>
+    <span>{{ data.comments }}</span>
+  </div>
+  <div class="views">
+    <span class="material-symbols-outlined"> thumb_up </span>
+    <span>{{ data.likes }}</span>
+  </div>
+</div>
+<div class="divider"></div>
+<div class="ranking">
+  <h5>First 6 days 21 hours</h5>
+  <table>
+    <tr>
+      <td>Ranking by views</td>
+      <td>{{ data.ranking }}</td>
+    </tr>
+    <tr>
+      <td>views</td>
+      <td>{{ data.views }}</td>
+    </tr>
+    <tr>
+      <td>Impressions Click-through</td>
+      <td>{{ data.clickThrough }}%</td>
+    </tr>
+    <tr>
+      <td>Averege view duration</td>
+      <td>{{ data.duration }}</td>
+    </tr>
+  </table>
+</div>
+<div class="links">
+  <div routerLink="analytics">Go to the video Analytics</div>
+  <div routerLink="comments">GO to comments</div>
+</div>

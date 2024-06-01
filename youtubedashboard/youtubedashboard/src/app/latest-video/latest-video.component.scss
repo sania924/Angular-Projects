@@ -1,0 +1,39 @@
+.video-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 0.5rem;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+img {
+  margin-top: 2px;
+  border-top: 1 px solid var(--light-black);
+}
+.ranking {
+  margin-top: 0.5rem;
+
+  table {
+    margin: 0.5rem 0;
+    width: 100%;
+  }
+  td {
+    font-size: 0.9rem;
+  }
+
+  .links {
+    div {
+      text-decoration: none;
+      &:hover {
+        border-bottom: 1px solid rgb(0, 113, 189);
+      }
+    }
+  }
+}
+
+h4 {
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+section {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  img {
+    &:first-of-type {
+      width: 40px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    &:last-of-type {
+      width: 75px;
+    }
+  }
+}
+.content {
+  flex: 1 1 auto;
+  padding: 0 0.5rem;
+  h6:first-child {
+    color: rgba(48, 48, 48, 0.7);
+  }
+}
+
+.links {
+  div {
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid rgb(0, 113, 189);
+    }
+  }
+}
