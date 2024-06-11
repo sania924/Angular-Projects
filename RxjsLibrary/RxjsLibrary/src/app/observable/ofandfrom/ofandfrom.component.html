@@ -1,0 +1,63 @@
+<div class="my-3 px-3 cointainer">
+  <h3>OF and From operator</h3>
+  <br />
+  <strong>Ex -01 (OF)</strong>
+  <hr />
+  <div class="row">
+    <div class="col-md-6">
+      <p class="bg-light border-round py-4 px-3">
+        <strong>Data :</strong> OF('sania','rabia', 'sana')
+      </p>
+      <hr />
+      <ul id="elContainer"></ul>
+    </div>
+    <!-- pass object -->
+    <div class="col-md-6">
+      <p class="bg-light border-round py-4 px-3">
+        <strong>Data :</strong> OF(&#123; a: 'sania', b: 'rabia', c: 'sana'
+        &#125;)
+      </p>
+      <hr />
+      <ul>
+        <li><strong>a:</strong>{{ obMsg.a }}</li>
+        <li><strong>b:</strong>{{ obMsg.b }}</li>
+        <li><strong>c:</strong>{{ obMsg.c }}</li>
+      </ul>
+    </div>
+  </div>
+  <hr />
+  <!-- from operator -->
+  <div class="row mt-4">
+    <strong class="pb-4">Ex -02 (From)</strong>
+    <!-- using array -->
+    <div class="col-md-4">
+      <strong>Array</strong>
+      <hr />
+      <p class="bg-light border-round py-4 px-3">
+        <strong>Data :</strong> From(['sania','rabia', 'sana'])
+      </p>
+      <hr />
+      <ul id="elContainer3"></ul>
+    </div>
+    <!-- using promise -->
+    <div class="col-md-4">
+      <strong>Promise</strong>
+      <hr />
+      <p class="bg-light border-round py-4 px-3">
+        <strong>Data :</strong> From promise to Observable
+      </p>
+      <hr />
+      <ul id="elContainer4"></ul>
+    </div>
+    <!-- using string -->
+    <div class="col-md-4">
+      <strong>String</strong>
+      <hr />
+      <p class="bg-light border-round py-4 px-3">
+        <strong>Data :</strong> From String to Observable
+      </p>
+      <hr />
+      <ul id="elContainer5"></ul>
+    </div>
+  </div>
+</div>

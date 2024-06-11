@@ -5,18 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './includes/header/header.component';
 import { PromiseComponent } from './promise/promise.component';
+import { ObservableComponent } from './observable/observable.component';
+import { FromEventComponent } from './observable/from-event/from-event.component';
+import { ListComponent } from './observable/list/list.component';
+import { IntervalTimerComponent } from './observable/interval-timer/interval-timer.component';
+import { OfandfromComponent } from './observable/ofandfrom/ofandfrom.component';
+import { ToArrayComponent } from './observable/to-array/to-array.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PromiseComponent
+    PromiseComponent,
+    ObservableComponent,
+    FromEventComponent,
+    ListComponent,
+    IntervalTimerComponent,
+    OfandfromComponent,
+    ToArrayComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

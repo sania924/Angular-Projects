@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "primeng/resources/themes/arya-purple/theme.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+// @import "primeng/resources/themes/luna-pink/theme.css";
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
