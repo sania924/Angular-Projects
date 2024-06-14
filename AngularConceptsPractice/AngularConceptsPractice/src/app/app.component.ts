@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { DatabindingPracticeComponent } from './data-binding/databinding-practice/databinding-practice.component';
+import { IfelseComponent } from './structuralDirective/ifelse/ifelse.component';
+import { NgclassNgstyleComponent } from './structuralDirective/ngclass-ngstyle/ngclass-ngstyle.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DatabindingPracticeComponent],
+  imports: [RouterOutlet, IfelseComponent, NgclassNgstyleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

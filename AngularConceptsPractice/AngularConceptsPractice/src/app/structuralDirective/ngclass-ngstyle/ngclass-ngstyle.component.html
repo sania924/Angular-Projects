@@ -1,0 +1,91 @@
+<h1>structural Directives</h1>
+<h4>ngclass and ngstyle</h4>
+<div class="row mt-4">
+  <div class="col-3">
+    <!-- directly pass variable by class -->
+    <div [ngClass]="Div1">
+      <h4 class="p-3 text-center mx-1">div1</h4>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="" [ngClass]="Div2 == true ? 'bg-primary' : 'bg-danger'">
+      <h4 class="p-3 text-center mx-1">div2</h4>
+    </div>
+  </div>
+  <div class="col-3">
+    <div [ngClass]="num1 == num2 ? 'bg-success' : 'bg-danger'">
+      <h4 class="bg-secondary p-3 text-center mx-1">div3</h4>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="" *ngIf="isactive">
+      <h4 class="bg-primary p-3 text-center mx-1">div4</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <!-- for button functionality -->
+  <div class="col-3 text-center">
+    <button class="btn btn-danger" (click)="showDiv1()">hide</button>
+    <button class="btn btn-primary mx-2" (click)="hideDiv1()">Show</button>
+  </div>
+  <!-- for toggle functionality -->
+  <div class="col-3 text-center">
+    <button class="btn btn-success" (click)="toggle()">Toggle</button>
+  </div>
+  <!-- for comparison functionality -->
+  <div class="col-3 text-center">
+    <input type="text" [(ngModel)]="num1" />
+    <input type="text" class="mx-2" [(ngModel)]="num2" />
+  </div>
+  <!-- for if  checkbox and dropdown select value is usa then show div -->
+  <div class="col-3 text-center">
+    <input type="checkbox" [(ngModel)]="isactive" />
+    <select name="" id="" class="mx-3" [(ngModel)]="selectedstate">
+      <option value="">Select state</option>
+      <option value="">America</option>
+      <option value="">Pakistan</option>
+      <option value="">USA</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+  <!-- ng with array -->
+  <div class="col-3">
+    <ul>
+      <li *ngFor="let array of cityArray">
+        {{ array }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-3">
+    <select name="" id="">
+      <option *ngFor="let array of cityArray">{{ array }}</option>
+    </select>
+  </div>
+  <!-- ngfor with obj -->
+  <div class="col-3"></div>
+  <div class="col-3"></div>
+</div>
+<div class="row">
+  <div class="col-5">
+    <div class="table-responsive">
+      <table class="table table-primary">
+        <thead>
+          <tr>
+            <th scope="col">Sr no</th>
+            <th scope="col">name</th>
+            <th scope="col">city</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="" *ngFor="let student of stdList">
+            <td scope="row">{{ student.id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.city }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

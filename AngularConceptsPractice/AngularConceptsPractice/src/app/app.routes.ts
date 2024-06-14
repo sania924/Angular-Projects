@@ -1,6 +1,8 @@
 import { Routes } from '@angular/router';
-import { DatabindingPracticeComponent } from './data-binding/databinding-practice/databinding-practice.component';
+import { IfelseComponent } from './structuralDirective/ifelse/ifelse.component';
+import { NgclassNgstyleComponent } from './structuralDirective/ngclass-ngstyle/ngclass-ngstyle.component';
 
 export const routes: Routes = [
-  { path: 'databinding-practice', component: DatabindingPracticeComponent },
+  { path: 'ifelse', component: IfelseComponent },
+  { path: 'ngclass-ngstyle', component: NgclassNgstyleComponent },
 ];
