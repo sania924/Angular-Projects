@@ -1,0 +1,45 @@
+{
+  "PARAGRAPH": "Dies ist ein Absatz Text auf Deutsch.",
+  "TITLE": "Willkommen auf unserer Website",
+  "HEADER": {
+    "SUBSCRIBE": "Abonnieren",
+    "LARGE": "Groß",
+    "SIGN_UP": "Anmelden"
+  },
+  "NAV": {
+    "WORLD": "Welt",
+    "US": "USA",
+    "TECHNOLOGY": "Technologie",
+    "DESIGN": "Design",
+    "CULTURE": "Kultur",
+    "BUSINESS": "Geschäft",
+    "POLITICS": "Politik",
+    "OPINION": "Meinung",
+    "SCIENCE": "Wissenschaft",
+    "HEALTH": "Gesundheit",
+    "STYLE": "Stil",
+    "TRAVEL": "Reise"
+  },
+  "BLOG": {
+    "TITLE": "Titel eines längeren vorgestellten Blogbeitrags",
+    "PARAGRAPH": "Mehrere Textzeilen, die die Einleitung bilden und neue Leser schnell und effizient über die interessantesten Inhalte dieses Beitrags informieren.",
+    "CONTINUE_READING": "Weiterlesen...",
+    "FEATURED_POST": "Vorgestellter Beitrag",
+    "POST_TITLE": "Beitragstitel",
+    "FROM_THE_FIREHOSE": "Aus dem Feuerwehrschlauch",
+    "SAMPLE_BLOG_POST": "Beispiel-Blogbeitrag",
+    "BY": "von",
+    "ABOUT": "Über",
+    "ABOUT_TEXT": "Passen Sie diesen Abschnitt an, um Ihren Besuchern etwas über Ihre Veröffentlichung, Autoren, Inhalte oder etwas völlig anderes zu erzählen. Ganz Ihnen überlassen.",
+    "ARCHIVES": "Archive",
+    "ELSEWHERE": "Anderswo"
+  },
+  "FOOTER": {
+    "BLOG_TEMPLATE": "Blog-Vorlage",
+    "BACK_TO_TOP": "Zurück nach oben"
+  },
+  "BLOGSAMPLE": {
+    "POST_CONTENT": "Dieser Blog-Beitrag zeigt einige verschiedene Arten von Inhalten, die mit Bootstrap unterstützt und gestaltet werden. Grundlegende Typografie, Listen, Tabellen, Bilder, Code und mehr werden wie erwartet unterstützt.",
+    "PLACEHOLDER_CONTENT": "Dies ist ein zusätzlicher Absatz mit Platzhalterinhalten. Er wurde geschrieben, um den verfügbaren Platz zu füllen und zu zeigen, wie ein längerer Textabschnitt den umliegenden Inhalt beeinflusst. Wir werden ihn oft wiederholen, um den Demonstrationsfluss aufrechtzuerhalten, also achten Sie darauf, diesen exakt gleichen Text immer wieder zu sehen."
+  }
+}

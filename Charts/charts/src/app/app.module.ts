@@ -3,13 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Chart, registerables } from 'chart.js';
 import { HttpClientModule } from '@angular/common/http';
-Chart.register(...registerables);
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    HighchartsChartModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

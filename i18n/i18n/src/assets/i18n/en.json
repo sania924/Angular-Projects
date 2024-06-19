@@ -1,0 +1,46 @@
+{
+  "PARAGRAPH": "This is a paragraph of text in English.",
+  "TITLE": "Welcome to Our Website",
+  "HEADER": {
+    "SUBSCRIBE": "Subscribe",
+    "LARGE": "Large",
+    "SIGN_UP": "Sign up"
+  },
+  "NAV": {
+    "WORLD": "World",
+    "US": "U.S.",
+    "TECHNOLOGY": "Technology",
+    "DESIGN": "Design",
+    "CULTURE": "Culture",
+    "BUSINESS": "Business",
+    "POLITICS": "Politics",
+    "OPINION": "Opinion",
+    "SCIENCE": "Science",
+    "HEALTH": "Health",
+    "STYLE": "Style",
+    "TRAVEL": "Travel"
+  },
+  "BLOG": {
+    "TITLE": "Title of a longer featured blog post",
+    "PARAGRAPH": "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.",
+    "CONTINUE_READING": "Continue reading...",
+    "FEATURED_POST": "Featured post",
+    "POST_TITLE": "Post title",
+    "FROM_THE_FIREHOSE": "From the Firehose",
+    "SAMPLE_BLOG_POST": "Sample blog post",
+    "BY": "by",
+    "ABOUT": "About",
+    "ABOUT_TEXT": "Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.",
+    "ARCHIVES": "Archives",
+    "ELSEWHERE": "Elsewhere"
+  },
+  "FOOTER": {
+    "BLOG_TEMPLATE": "Blog template",
+    "BACK_TO_TOP": "Back to top"
+  },
+
+  "BLOGSAMPLE": {
+    "POST_CONTENT": "This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.",
+    "PLACEHOLDER_CONTENT": "This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text."
+  }
+}

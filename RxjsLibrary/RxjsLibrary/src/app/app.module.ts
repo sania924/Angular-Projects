@@ -11,6 +11,7 @@ import { ListComponent } from './observable/list/list.component';
 import { IntervalTimerComponent } from './observable/interval-timer/interval-timer.component';
 import { OfandfromComponent } from './observable/ofandfrom/ofandfrom.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
+import { CustomObservableComponent } from './observable/custom-observable/custom-observable.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ToArrayComponent } from './observable/to-array/to-array.component';
     IntervalTimerComponent,
     OfandfromComponent,
     ToArrayComponent,
+    CustomObservableComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
