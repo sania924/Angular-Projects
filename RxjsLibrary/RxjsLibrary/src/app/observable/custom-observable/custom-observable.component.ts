@@ -33,7 +33,7 @@ export class CustomObservableComponent implements OnInit {
       }, 6000);
     });
   }
-
+  // hello
   ngOnInit() {
     this.customObservable.subscribe(
       (res) => {
