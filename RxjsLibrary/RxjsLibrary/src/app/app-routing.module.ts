@@ -9,6 +9,9 @@ import { IntervalTimerComponent } from './observable/interval-timer/interval-tim
 import { OfandfromComponent } from './observable/ofandfrom/ofandfrom.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { CustomObservableComponent } from './observable/custom-observable/custom-observable.component';
+import { MapComponent } from './observable/map/map.component';
+import { PluckComponent } from './observable/pluck/pluck.component';
+import { FilterComponent } from './observable/filter/filter.component';
 
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -23,6 +26,9 @@ const routes: Routes = [
       { path: 'ofandfrom', component: OfandfromComponent },
       { path: 'to-array', component: ToArrayComponent },
       { path: 'custom-observable', component: CustomObservableComponent },
+      { path: 'map', component: MapComponent },
+      { path: 'pluck', component: PluckComponent },
+      { path: 'filter', component: FilterComponent },
     ],
   },
 

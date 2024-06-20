@@ -1,0 +1,48 @@
+<h3 class="mt-3">Pluck Operator</h3>
+<hr />
+<div class="row">
+  <div class="col-md-6 px-5">
+    <strong>Exercise 1</strong>
+    <hr />
+    <p class="bg-light border-round py-4 px-3">
+      <strong>Pluck :</strong> Access Object Property
+    </p>
+    <table>
+      <tr class="px-4">
+        <th>Skills</th>
+      </tr>
+      <hr />
+      <tr *ngFor="let item of data">
+        <td>{{ item }}</td>
+      </tr>
+    </table>
+    <hr />
+  </div>
+
+  <div class="col-md-6">
+    <strong>Exercise 2</strong>
+    <hr />
+    <p class="bg-light border-round py-4 px-3">
+      <strong>Pluck :</strong> by Nested property
+    </p>
+    <table>
+      <tr class="px-4">
+        <th>Job=>Title</th>
+      </tr>
+      <hr />
+      <tr *ngFor="let item of data2">
+        <td>{{ item }}</td>
+      </tr>
+    </table>
+    <hr />
+  </div>
+  <!-- <div class="col-md-4">
+    <strong>Exercise 3</strong>
+    <hr />
+    <p class="bg-light border-round py-4 px-3">
+      <strong>Map Object =></strong> Map data
+    </p>
+
+    <hr />
+  </div> -->
+</div>
