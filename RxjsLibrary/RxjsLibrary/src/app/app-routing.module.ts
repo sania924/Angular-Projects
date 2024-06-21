@@ -12,6 +12,8 @@ import { CustomObservableComponent } from './observable/custom-observable/custom
 import { MapComponent } from './observable/map/map.component';
 import { PluckComponent } from './observable/pluck/pluck.component';
 import { FilterComponent } from './observable/filter/filter.component';
+import { TakeComponent } from './observable/take/take.component';
+import { DebouncetimeComponent } from './observable/debouncetime/debouncetime.component';
 
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -29,6 +31,8 @@ const routes: Routes = [
       { path: 'map', component: MapComponent },
       { path: 'pluck', component: PluckComponent },
       { path: 'filter', component: FilterComponent },
+      { path: 'take', component: TakeComponent },
+      { path: 'deboucetime', component: DebouncetimeComponent },
     ],
   },
 

@@ -1,0 +1,45 @@
+<ngx-loading-bar></ngx-loading-bar>
+
+<h3 class="mt-4">Debounce Time & DistinctUntil Changed</h3>
+<div class="row">
+  <div class="col-6">
+    <strong>Ex-1 <span class="text-primary">Debounce Time</span></strong>
+    <hr />
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label col-form-label-lg">Search</label>
+      <div class="col-sm-7">
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          placeholder="search ..."
+          #myInput
+        />
+      </div>
+      <span *ngIf="reqData != null"
+        >Requested Data :
+        <strong class="text-primary">{{ reqData }}</strong></span
+      >
+    </div>
+  </div>
+  <div class="col-6">
+    <strong
+      >Ex-1 <span class="text-primary">DistinctUntil Changed </span></strong
+    >
+    <hr />
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label col-form-label-lg">Search</label>
+      <div class="col-sm-7">
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          placeholder="search ..."
+          #myInput
+        />
+      </div>
+      <span *ngIf="reqData2 != null"
+        >Requested Data :
+        <strong class="text-primary">{{ reqData2 }}</strong></span
+      >
+    </div>
+  </div>
+</div>

@@ -7,36 +7,12 @@ import * as Highcharts from 'highcharts';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  // Highcharts: typeof Highcharts = Highcharts;
-  // chartOptions: Highcharts.Options = {
-  //   series: [
-  //     {
-  //       data: [1, 2, 3],
-  //       type: 'line',
-  //     },
-  //   ],
-  // };
-  // responsive!: {
-  //   rules: [
-  //     {
-  //       condition: {
-  //         maxWidth: 500;
-  //       };
-  //       chartOptions: {
-  //         legend: {
-  //           layout: 'horizontal';
-  //           align: 'center';
-  //           verticalAlign: 'bottom';
-  //         };
-  //       };
-  //     }
-  //   ];
-  // };
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
     title: {
       text: 'Solar Employment Growth by Sector, 2010-2016',
     },
+    credits: { enabled: false },
     subtitle: {
       text: 'Source: thesolarfoundation.com',
     },
@@ -44,6 +20,16 @@ export class AppComponent {
       title: {
         text: 'Number of Employees',
       },
+    },
+    xAxis: {
+      title: {
+        text: 'Years',
+      },
+    },
+    tooltip: {
+      shadow: false,
+      backgroundColor: '#3333',
+      style: { color: 'green' },
     },
     plotOptions: {
       series: {
@@ -90,7 +76,7 @@ export class AppComponent {
           },
           chartOptions: {
             legend: {
-              layout: 'horizontal',
+              layout: 'vertical',
               align: 'center',
               verticalAlign: 'bottom',
             },
