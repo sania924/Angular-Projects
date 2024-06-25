@@ -19,6 +19,9 @@ import { TakeComponent } from './observable/take/take.component';
 import { DebouncetimeComponent } from './observable/debouncetime/debouncetime.component';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { ConcatComponent } from './observable/concat/concat.component';
+import { MergeComponent } from './observable/merge/merge.component';
+import { MergemapComponent } from './observable/mergemap/mergemap.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
     FilterComponent,
     TakeComponent,
     DebouncetimeComponent,
+    ConcatComponent,
+    MergeComponent,
+    MergemapComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,9 @@ import { PluckComponent } from './observable/pluck/pluck.component';
 import { FilterComponent } from './observable/filter/filter.component';
 import { TakeComponent } from './observable/take/take.component';
 import { DebouncetimeComponent } from './observable/debouncetime/debouncetime.component';
+import { ConcatComponent } from './observable/concat/concat.component';
+import { MergeComponent } from './observable/merge/merge.component';
+import { MergemapComponent } from './observable/mergemap/mergemap.component';
 
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -33,6 +36,9 @@ const routes: Routes = [
       { path: 'filter', component: FilterComponent },
       { path: 'take', component: TakeComponent },
       { path: 'deboucetime', component: DebouncetimeComponent },
+      { path: 'concat', component: ConcatComponent },
+      { path: 'merge', component: MergeComponent },
+      { path: 'mergemap', component: MergemapComponent },
     ],
   },
 
