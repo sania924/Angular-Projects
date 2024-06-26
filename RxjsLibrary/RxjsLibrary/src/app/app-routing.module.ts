@@ -17,6 +17,11 @@ import { DebouncetimeComponent } from './observable/debouncetime/debouncetime.co
 import { ConcatComponent } from './observable/concat/concat.component';
 import { MergeComponent } from './observable/merge/merge.component';
 import { MergemapComponent } from './observable/mergemap/mergemap.component';
+import { ConcatmapComponent } from './observable/concatmap/concatmap.component';
+import { SubjectComponent } from './observable/subject/subject.component';
+import { Comp1Component } from './comps/comp1/comp1.component';
+import { Comp2Component } from './comps/comp2/comp2.component';
+import { Comp3Component } from './comps/comp3/comp3.component';
 
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -39,6 +44,12 @@ const routes: Routes = [
       { path: 'concat', component: ConcatComponent },
       { path: 'merge', component: MergeComponent },
       { path: 'mergemap', component: MergemapComponent },
+      { path: 'concatmap', component: ConcatmapComponent },
+      { path: 'switchmap', component: ConcatmapComponent },
+      { path: 'subject', component: SubjectComponent },
+      { path: 'comp1', component: Comp1Component },
+      { path: 'comp2', component: Comp2Component },
+      { path: 'comp3', component: Comp3Component },
     ],
   },
 

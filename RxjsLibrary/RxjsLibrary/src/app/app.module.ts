@@ -22,6 +22,12 @@ import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { ConcatComponent } from './observable/concat/concat.component';
 import { MergeComponent } from './observable/merge/merge.component';
 import { MergemapComponent } from './observable/mergemap/mergemap.component';
+import { ConcatmapComponent } from './observable/concatmap/concatmap.component';
+import { SwitchmapComponent } from './observable/switchmap/switchmap.component';
+import { SubjectComponent } from './observable/subject/subject.component';
+import { Comp1Component } from './comps/comp1/comp1.component';
+import { Comp2Component } from './comps/comp2/comp2.component';
+import { Comp3Component } from './comps/comp3/comp3.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +49,12 @@ import { MergemapComponent } from './observable/mergemap/mergemap.component';
     ConcatComponent,
     MergeComponent,
     MergemapComponent,
+    ConcatmapComponent,
+    SwitchmapComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
   ],
   imports: [
     BrowserModule,

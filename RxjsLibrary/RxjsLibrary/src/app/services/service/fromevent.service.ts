@@ -1,10 +1,14 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FromeventService {
   constructor() {}
+  exclusive = new Subject<boolean>();
+  // userName = new Subject<string>();  // not give inital value
+  userName = new BehaviorSubject<string>('Sania'); //used to set inital value
 
   appendItem(val: any, containerId: any) {
     //tale a val argument to pass value and iff want to add another list so take container id

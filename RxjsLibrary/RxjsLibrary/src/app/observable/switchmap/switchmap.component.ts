@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { from, map, mergeAll, mergeMap, of } from 'rxjs';
+import { of, from, map, switchMap, switchAll, delay } from 'rxjs';
 import { FromeventService } from '../../services/service/fromevent.service';
 
 @Component({
-  selector: 'app-mergemap',
-  templateUrl: './mergemap.component.html',
-  styleUrl: './mergemap.component.scss',
+  selector: 'app-switchmap',
+  templateUrl: './switchmap.component.html',
+  styleUrl: './switchmap.component.scss',
 })
-export class MergemapComponent implements OnInit {
+export class SwitchmapComponent implements OnInit {
+  // switchmap take latest request and mostly used in search functionality
   constructor(private service: FromeventService) {}
   getData(data: any) {
-    return of(data + 'Video uploaded');
+    return of(data + 'Video uploaded').pipe(delay(200));
   }
   ngOnInit(): void {
     const Source = from(['Tech', 'Comedy', 'News']);
@@ -22,16 +23,16 @@ export class MergemapComponent implements OnInit {
       })
     );
 
-    // merge all
+    // switch all
     Source.pipe(
       map((res) => this.getData(res)),
-      mergeAll() // used to merge all and not need to use double observable
+      switchAll() // used to switch all and not need to use double observable
     ).subscribe((res) => {
       console.log(res);
       this.service.appendItem(res, 'elContainer2');
     });
-    //  combine map+ mergeall=mergemap => use merge map instead of merge all and map
-    Source.pipe(mergeMap((res) => this.getData(res))).subscribe((res) => {
+    //  combine map+ switchall =switchmap => use merge map instead of merge all and map
+    Source.pipe(switchMap((res) => this.getData(res))).subscribe((res) => {
       console.log(res);
       this.service.appendItem(res, 'elContainer3');
     });
