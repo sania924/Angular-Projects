@@ -22,6 +22,10 @@ import { SubjectComponent } from './observable/subject/subject.component';
 import { Comp1Component } from './comps/comp1/comp1.component';
 import { Comp2Component } from './comps/comp2/comp2.component';
 import { Comp3Component } from './comps/comp3/comp3.component';
+import { ReplaysubjectComponent } from './observable/replaysubject/replaysubject.component';
+import { AsyncsubjectComponent } from './observable/asyncsubject/asyncsubject.component';
+import { CombinelatestComponent } from './observable/combinelatest/combinelatest.component';
+import { TapComponent } from './observable/tap/tap.component';
 
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -50,6 +54,10 @@ const routes: Routes = [
       { path: 'comp1', component: Comp1Component },
       { path: 'comp2', component: Comp2Component },
       { path: 'comp3', component: Comp3Component },
+      { path: 'replaysubject', component: ReplaysubjectComponent },
+      { path: 'asyncsubject', component: AsyncsubjectComponent },
+      { path: 'combinelatest', component: CombinelatestComponent },
+      { path: 'tap', component: TapComponent },
     ],
   },
 

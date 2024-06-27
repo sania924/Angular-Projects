@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { AsyncSubject, BehaviorSubject, ReplaySubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -9,6 +9,8 @@ export class FromeventService {
   exclusive = new Subject<boolean>();
   // userName = new Subject<string>();  // not give inital value
   userName = new BehaviorSubject<string>('Sania'); //used to set inital value
+  videoEmit = new ReplaySubject<string>(5); //used to set lastest 5 values
+  asyncvideoEmit = new AsyncSubject<string>(); //take last value after complete subscription
 
   appendItem(val: any, containerId: any) {
     //tale a val argument to pass value and iff want to add another list so take container id

@@ -28,6 +28,10 @@ import { SubjectComponent } from './observable/subject/subject.component';
 import { Comp1Component } from './comps/comp1/comp1.component';
 import { Comp2Component } from './comps/comp2/comp2.component';
 import { Comp3Component } from './comps/comp3/comp3.component';
+import { ReplaysubjectComponent } from './observable/replaysubject/replaysubject.component';
+import { AsyncsubjectComponent } from './observable/asyncsubject/asyncsubject.component';
+import { CombinelatestComponent } from './observable/combinelatest/combinelatest.component';
+import { TapComponent } from './observable/tap/tap.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +59,10 @@ import { Comp3Component } from './comps/comp3/comp3.component';
     Comp1Component,
     Comp2Component,
     Comp3Component,
+    ReplaysubjectComponent,
+    AsyncsubjectComponent,
+    CombinelatestComponent,
+    TapComponent,
   ],
   imports: [
     BrowserModule,
