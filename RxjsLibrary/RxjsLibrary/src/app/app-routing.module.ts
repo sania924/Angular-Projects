@@ -26,6 +26,7 @@ import { ReplaysubjectComponent } from './observable/replaysubject/replaysubject
 import { AsyncsubjectComponent } from './observable/asyncsubject/asyncsubject.component';
 import { CombinelatestComponent } from './observable/combinelatest/combinelatest.component';
 import { TapComponent } from './observable/tap/tap.component';
+import { SwitchmapSearchexampleComponent } from './observable/switchmap-searchexample/switchmap-searchexample.component';
 
 const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -58,6 +59,10 @@ const routes: Routes = [
       { path: 'asyncsubject', component: AsyncsubjectComponent },
       { path: 'combinelatest', component: CombinelatestComponent },
       { path: 'tap', component: TapComponent },
+      {
+        path: 'switchmap-searchexample',
+        component: SwitchmapSearchexampleComponent,
+      },
     ],
   },
 

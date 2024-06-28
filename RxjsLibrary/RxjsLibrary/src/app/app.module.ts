@@ -32,6 +32,9 @@ import { ReplaysubjectComponent } from './observable/replaysubject/replaysubject
 import { AsyncsubjectComponent } from './observable/asyncsubject/asyncsubject.component';
 import { CombinelatestComponent } from './observable/combinelatest/combinelatest.component';
 import { TapComponent } from './observable/tap/tap.component';
+import { SwitchmapSearchexampleComponent } from './observable/switchmap-searchexample/switchmap-searchexample.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -63,12 +66,15 @@ import { TapComponent } from './observable/tap/tap.component';
     AsyncsubjectComponent,
     CombinelatestComponent,
     TapComponent,
+    SwitchmapSearchexampleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoadingBarModule,
     LoadingBarHttpClientModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
