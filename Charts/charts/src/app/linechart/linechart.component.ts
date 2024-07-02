@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
 import * as Highcharts from 'highcharts';
 import HC_exporting from 'highcharts/modules/exporting';
 import HC_exportData from 'highcharts/modules/export-data';
@@ -13,79 +12,85 @@ HC_exportData(Highcharts);
   styleUrl: './linechart.component.scss',
 })
 export class LinechartComponent implements OnInit {
-  Highcharts: typeof Highcharts = Highcharts;
-
-  chartOptions: Highcharts.Options = {};
-  constructor(private dataService: DataService) {}
-
   ngOnInit(): void {
-    this.dataService.getData().subscribe((data) => {
-      this.chartOptions = {
-        chart: {
-          type: 'area',
-          // zoomType: 'x'  // Use 'zoomType' instead of 'zooming'
-        },
-        title: {
-          text: 'USD to EUR exchange rate over time',
-          align: 'left',
-        },
-        subtitle: {
-          text:
-            document.ontouchstart === undefined
-              ? 'Click and drag in the plot area to zoom in'
-              : 'Pinch the chart to zoom in',
-          align: 'left',
-        },
-        xAxis: {
-          type: 'datetime',
-        },
-        yAxis: {
-          title: {
-            text: 'Exchange rate',
-          },
-        },
-        legend: {
-          enabled: false,
-        },
-        // plotOptions: {
-        //   area: {
-        //     // fillColor: {
-        //     //   linearGradient: {
-        //     //     x1: 0,
-        //     //     y1: 0,
-        //     //     x2: 0,
-        //     //     y2: 1,
-        //     //   },
-        //       // stops: [
-        //       //   [0, Highcharts.getOptions().colors[0]], // No casting needed if colors array is correctly typed
-        //       //   [
-        //       //     1,
-        //       //     Highcharts.color(Highcharts.getOptions().colors[0])
-        //       //       .setOpacity(0)
-        //       //       .get('rgba') as unknown as Highcharts.ColorType, // Use type assertion if necessary
-        //       //   ],
-        //       // ] as Highcharts.GradientColorStopObject[], // Ensure proper type for stops array
-        //     },
-        //     marker: {
-        //       radius: 2,
-        //     },
-        //     lineWidth: 1,
-        //     states: {
-        //       hover: {
-        //         lineWidth: 1,
-        //       },
-        //     },
-        //     threshold: null,
-        //   },
-        // },
-        series: [
-          {
-            type: 'area',
-            name: 'USD to EUR',
-            data: data,
-          },
-        ],
-      };
-    });
+    throw new Error('Method not implemented.');
   }
+  Highcharts: typeof Highcharts = Highcharts;
+  chartOptions: Highcharts.Options = {
+    title: {
+      text: 'Solar Employment Growth by Sector, 2010-2016',
+    },
+    credits: { enabled: true },
+    subtitle: {
+      text: 'Source: thesolarfoundation.com',
+    },
+    yAxis: {
+      title: {
+        text: 'Number of Employees',
+      },
+    },
+    xAxis: {
+      title: {
+        text: 'Years',
+      },
+    },
+    tooltip: {
+      shadow: false,
+      backgroundColor: '#3333',
+      style: { color: 'green' },
+    },
+    plotOptions: {
+      series: {
+        label: {
+          connectorAllowed: false,
+        },
+        pointStart: 2010,
+      },
+    },
+    series: [
+      {
+        type: 'line',
+        name: 'Installation',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175],
+      },
+      {
+        type: 'line',
+        name: 'Manufacturing',
+        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434],
+      },
+      {
+        type: 'line',
+
+        name: 'Sales & Distribution',
+        data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387],
+      },
+      {
+        type: 'line',
+        name: 'Project Development',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227],
+      },
+      {
+        type: 'line',
+
+        name: 'Other',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111],
+      },
+    ],
+    responsive: {
+      rules: [
+        {
+          condition: {
+            maxWidth: 500,
+          },
+          chartOptions: {
+            legend: {
+              layout: 'vertical',
+              align: 'center',
+              verticalAlign: 'bottom',
+            },
+          },
+        },
+      ],
+    },
+  };
 }

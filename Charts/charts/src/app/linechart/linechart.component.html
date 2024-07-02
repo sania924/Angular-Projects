@@ -8,11 +8,18 @@
 </div>
  -->
 
-<figure class="highcharts-figure">
+<!-- <figure class="highcharts-figure">
   <div id="container"></div>
   <p class="highcharts-description">
     Highcharts has extensive support for time series, and will adapt
     intelligently to the input data. Click and drag in the chart to zoom in and
     inspect the data.
   </p>
-</figure>
+</figure> -->
+
+<highcharts-chart
+  [Highcharts]="Highcharts"
+  [options]="chartOptions"
+  style="width: 100%; height: 400px; display: block"
+>
+</highcharts-chart>
