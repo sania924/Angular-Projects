@@ -190,129 +190,66 @@
         <hr />
         <p>{{ "BLOGSAMPLE.PLACEHOLDER_CONTENT" | translate }}</p>
 
-        <h2>Blockquotes</h2>
-        <p>This is an example blockquote in action:</p>
+        <h2>{{ "BLOCKQUOTES.TITLE" | translate }}</h2>
+        <p>{{ "BLOCKQUOTES.DESCRIPTION" | translate }}</p>
         <blockquote class="blockquote">
-          <p>Quoted text goes here.</p>
+          <p>{{ "BLOCKQUOTES.QUOTED_TEXT" | translate }}</p>
         </blockquote>
-        <p>
-          This is some additional paragraph placeholder content. It has been
-          written to fill the available space and show how a longer snippet of
-          text affects the surrounding content. We'll repeat it often to keep
-          the demonstration flowing, so be on the lookout for this exact same
-          string of text.
-        </p>
-        <h3>Example lists</h3>
-        <p>
-          This is some additional paragraph placeholder content. It's a slightly
-          shorter version of the other highly repetitive body text used
-          throughout. This is an example unordered list:
-        </p>
-        <ul>
-          <li>First list item</li>
-          <li>Second list item with a longer description</li>
-          <li>Third list item to close it out</li>
-        </ul>
-        <p>And this is an ordered list:</p>
+        <p>{{ "BLOCKQUOTES.PARAGRAPH" | translate }}</p>
+        <h3>{{ "BLOCKQUOTES.LIST_TITLE" | translate }}</h3>
+        <p>{{ "BLOGSAMPLE.PLACEHOLDER_CONTENT" | translate }}</p>
+        <h3>{{ "Ordered list:" | translate }}</h3>
         <ol>
-          <li>First list item</li>
-          <li>Second list item with a longer description</li>
-          <li>Third list item to close it out</li>
+          <li>{{ "First list item" | translate }}</li>
+          <li>
+            {{ "Second list item with a longer description" | translate }}
+          </li>
+          <li>{{ "Third list item to close it out" | translate }}</li>
         </ol>
-        <p>And this is a definiton list:</p>
+
+        <h3>{{ "Unordered list:" | translate }}</h3>
+        <ul>
+          <li>{{ "First list item" | translate }}</li>
+          <li>
+            {{ "Second list item with a longer description" | translate }}
+          </li>
+          <li>{{ "Third list item to close it out" | translate }}</li>
+        </ul>
+
+        <h3>{{ "Definiton list:" | translate }}</h3>
         <dl>
-          <dt>HyperText Markup Language (HTML)</dt>
+          <dt>{{ "HyperText Markup Language (HTML)" | translate }}</dt>
           <dd>
-            The language used to describe and define the content of a Web page
+            {{
+              "The language used to describe and define the content of a Web page"
+                | translate
+            }}
           </dd>
-          <dt>Cascading Style Sheets (CSS)</dt>
-          <dd>Used to describe the appearance of Web content</dd>
-          <dt>JavaScript (JS)</dt>
+          <dt>{{ "Cascading Style Sheets (CSS)" | translate }}</dt>
           <dd>
-            The programming language used to build advanced Web sites and
-            applications
+            {{ "Used to describe the appearance of Web content" | translate }}
+          </dd>
+          <dt>{{ "JavaScript (JS)" | translate }}</dt>
+          <dd>
+            {{
+              "The programming language used to build advanced Web sites and applications"
+                | translate
+            }}
           </dd>
         </dl>
-        <h2>Inline HTML elements</h2>
+        <h2>{{ "Heading" | translate }}</h2>
         <p>
-          HTML defines a long list of available inline tags, a complete list of
-          which can be found on the
-          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-            >Mozilla Developer Network</a
-          >.
+          {{
+            "This is some additional paragraph placeholder content." | translate
+          }}
         </p>
-        <ul>
-          <li>
-            <strong>To bold text</strong>, use
-            <code class="language-plaintext highlighter-rouge"
-              >&lt;strong&gt;</code
-            >.
-          </li>
-          <li>
-            <em>To italicize text</em>, use
-            <code class="language-plaintext highlighter-rouge">&lt;em&gt;</code
-            >.
-          </li>
-          <li>
-            Abbreviations, like
-            <abbr title="HyperText Markup Langage">HTML</abbr> should use
-            <code class="language-plaintext highlighter-rouge"
-              >&lt;abbr&gt;</code
-            >, with an optional
-            <code class="language-plaintext highlighter-rouge">title</code>
-            attribute for the full phrase.
-          </li>
-          <li>
-            Citations, like <cite>— Mark Otto</cite>, should use
-            <code class="language-plaintext highlighter-rouge"
-              >&lt;cite&gt;</code
-            >.
-          </li>
-          <li>
-            <del>Deleted</del> text should use
-            <code class="language-plaintext highlighter-rouge"
-              >&lt;del&gt;</code
-            >
-            and <ins>inserted</ins> text should use
-            <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code
-            >.
-          </li>
-          <li>
-            Superscript <sup>text</sup> uses
-            <code class="language-plaintext highlighter-rouge"
-              >&lt;sup&gt;</code
-            >
-            and subscript <sub>text</sub> uses
-            <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code
-            >.
-          </li>
-        </ul>
+        <h3>{{ "Sub-heading" | translate }}</h3>
         <p>
-          Most of these elements are styled by browsers with few modifications
-          on our part.
+          {{
+            "This is some additional paragraph placeholder content." | translate
+          }}
         </p>
-        <h2>Heading</h2>
-        <p>
-          This is some additional paragraph placeholder content. It has been
-          written to fill the available space and show how a longer snippet of
-          text affects the surrounding content. We'll repeat it often to keep
-          the demonstration flowing, so be on the lookout for this exact same
-          string of text.
-        </p>
-        <h3>Sub-heading</h3>
-        <p>
-          This is some additional paragraph placeholder content. It has been
-          written to fill the available space and show how a longer snippet of
-          text affects the surrounding content. We'll repeat it often to keep
-          the demonstration flowing, so be on the lookout for this exact same
-          string of text.
-        </p>
-        <pre><code>Example code block</code></pre>
-        <p>
-          This is some additional paragraph placeholder content. It's a slightly
-          shorter version of the other highly repetitive body text used
-          throughout.
-        </p>
+        <pre><code>{{ 'Example code block' | translate }}</code></pre>
       </article>
 
       <nav class="blog-pagination" aria-label="Pagination">

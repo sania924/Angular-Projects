@@ -42,5 +42,30 @@
   "BLOGSAMPLE": {
     "POST_CONTENT": "توضح هذه التدوينة أنواعًا مختلفة من المحتوى التي يتم دعمها وتنسيقها باستخدام Bootstrap. يتم دعم الطباعة الأساسية والقوائم والجداول والصور والتعليمات البرمجية والمزيد كما هو متوقع.",
     "PLACEHOLDER_CONTENT": "هذا نص فقرة إضافي يستخدم كعنصر نائب. تمت كتابته لملء المساحة المتاحة ولإظهار كيف يؤثر مقطع أطول من النص على المحتوى المحيط. سنكرره كثيرًا للحفاظ على استمرار العرض، لذا انتبه إلى هذا النص المتكرر."
-  }
+  },
+  "BLOCKQUOTES": {
+    "TITLE": "اقتباسات",
+    "DESCRIPTION": "هذا مثال على الاقتباس أثناء العمل:",
+    "QUOTED_TEXT": "يذهب النص المقتبس هنا.",
+    "PARAGRAPH": "هذه بعض محتويات الفقرة الإضافية. لقد تمت كتابتها لملء المساحة المتاحة وإظهار كيف يؤثر مقطع نصي أطول على المحتوى المحيط. سنكرره كثيرًا للحفاظ على تدفق العرض التوضيحي، لذا كن متيقظًا لهذه السلسلة نفسها من النص.",
+    "LIST_TITLE": "قوائم المثال"
+  },
+  "Ordered list:": "قائمة مرتبة:",
+  "Unordered list:": "قائمة غير مرتبة:",
+  "Definiton list:": "قائمة التعريف:",
+  "First list item": "العنصر الأول في القائمة",
+  "Second list item with a longer description": "العنصر الثاني في القائمة مع وصف أطول",
+  "Third list item to close it out": "العنصر الثالث لإغلاق القائمة",
+  "HyperText Markup Language (HTML)": "لغة تعليمات الترميز للنصوص الفائقة (HTML)",
+  "The language used to describe and define the content of a Web page": "اللغة المستخدمة لوصف وتعريف محتوى صفحة الويب",
+  "Cascading Style Sheets (CSS)": "ورقة الأنماط التدرجية (CSS)",
+  "Used to describe the appearance of Web content": "تستخدم لوصف مظهر محتوى الويب",
+  "JavaScript (JS)": "لغة البرمجة المستخدمة في بناء مواقع الويب والتطبيقات المتقدمة",
+  "The programming language used to build advanced Web sites and applications": "اللغة البرمجية المستخدمة في بناء مواقع الويب والتطبيقات المتقدمة",
+  "Heading": "عنوان",
+  "Sub-heading": "عنوان فرعي",
+  "Example code block": "مثال على كتلة الشفرة",
+  "This is some additional paragraph placeholder content.": "هذا نص بديل لملء المساحة المتاحة.",
+  "It has been written to fill the available space...": "تم كتابته لملء المساحة المتاحة...",
+  "Slightly shorter version...": "نسخة أقصر قليلا..."
 }

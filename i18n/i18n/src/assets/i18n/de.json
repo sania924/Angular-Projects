@@ -41,5 +41,31 @@
   "BLOGSAMPLE": {
     "POST_CONTENT": "Dieser Blog-Beitrag zeigt einige verschiedene Arten von Inhalten, die mit Bootstrap unterstützt und gestaltet werden. Grundlegende Typografie, Listen, Tabellen, Bilder, Code und mehr werden wie erwartet unterstützt.",
     "PLACEHOLDER_CONTENT": "Dies ist ein zusätzlicher Absatz mit Platzhalterinhalten. Er wurde geschrieben, um den verfügbaren Platz zu füllen und zu zeigen, wie ein längerer Textabschnitt den umliegenden Inhalt beeinflusst. Wir werden ihn oft wiederholen, um den Demonstrationsfluss aufrechtzuerhalten, also achten Sie darauf, diesen exakt gleichen Text immer wieder zu sehen."
-  }
+  },
+  "BLOCKQUOTES": {
+    "TITLE": "Blockzitate",
+    "DESCRIPTION": "Dies ist ein Beispiel für ein Blockzitat in Aktion:",
+    "QUOTED_TEXT": "Hier geht der zitierte Text.",
+    "PARAGRAPH": "Dies ist ein weiterer Absatz Platzhalter Inhalt. Es wurde geschrieben, um den verfügbaren Platz zu füllen und zu zeigen, wie ein längerer Textabschnitt den umgebenden Inhalt beeinflusst. Wir werden es oft wiederholen, um die Demonstration am Laufen zu halten, also achten Sie auf diese genau gleiche Textzeichenfolge.",
+    "LIST_TITLE": "Beispiellisten"
+  },
+  "Ordered list:": "Geordnete Liste:",
+  "Unordered list:": "Ungeordnete Liste:",
+  "Definiton list:": "Definitionenliste:",
+  "First list item": "Erster Listeneintrag",
+  "Second list item with a longer description": "Zweiter Listeneintrag mit einer längeren Beschreibung",
+  "Third list item to close it out": "Dritter Listeneintrag zum Abschluss",
+  "HyperText Markup Language (HTML)": "Hypertext Markup Language (HTML)",
+  "The language used to describe and define the content of a Web page": "Die Sprache zur Beschreibung und Definition des Inhalts einer Webseite",
+  "Cascading Style Sheets (CSS)": "Cascading Style Sheets (CSS)",
+  "Used to describe the appearance of Web content": "Wird verwendet, um das Erscheinungsbild von Webinhalten zu beschreiben",
+  "JavaScript (JS)": "JavaScript (JS)",
+  "The programming language used to build advanced Web sites and applications": "Die Programmiersprache zur Erstellung fortschrittlicher Webseiten und Anwendungen",
+
+  "Heading": "Überschrift",
+  "Sub-heading": "Unterüberschrift",
+  "Example code block": "Beispielcodeblock",
+  "This is some additional paragraph placeholder content.": "Dies ist zusätzlicher Platzhalterinhalt.",
+  "It has been written to fill the available space...": "Es wurde geschrieben, um den verfügbaren Platz zu füllen...",
+  "Slightly shorter version...": "Eine etwas kürzere Version..."
 }

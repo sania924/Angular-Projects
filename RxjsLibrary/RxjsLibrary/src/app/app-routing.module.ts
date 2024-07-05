@@ -32,7 +32,7 @@ const routes: Routes = [
   { path: 'header', component: HeaderComponent },
   { path: 'promise', component: PromiseComponent },
   {
-    path: 'observable',
+    path: '',
     component: ObservableComponent,
     children: [
       { path: '', component: ListComponent },
@@ -66,7 +66,7 @@ const routes: Routes = [
     ],
   },
 
-  { path: '**', component: PromiseComponent },
+  // { path: '**', component: PromiseComponent },
 ];
 
 @NgModule({
