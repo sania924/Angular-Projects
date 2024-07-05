@@ -1,0 +1,41 @@
+<figure class="highcharts-figure">
+  <highcharts-chart
+    [Highcharts]="Highcharts"
+    [options]="chartOptions"
+    style="width: 100%; height: 400px; display: block"
+  ></highcharts-chart>
+  <p class="highcharts-description">
+    Datasets formatted in CSV or JSON can be fetched remotely using the
+    <code>data</code> module. This chart shows how a chart can also be
+    configured to poll against the remote source.
+  </p>
+</figure>
+
+<div class="ld-form">
+  <div class="ld-row">
+    <label class="ld-label"> Enable Polling </label>
+    <input
+      type="checkbox"
+      [checked]="enablePolling"
+      (change)="onPollingCheckboxChange($event)"
+    />
+  </div>
+  <div class="ld-row">
+    <label class="ld-label"> Polling Time (Seconds) </label>
+    <input
+      class="ld-time-input"
+      type="number"
+      [value]="pollingTime"
+      (change)="onPollingInputChange($event)"
+    />
+  </div>
+  <div class="ld-row">
+    <label class="ld-label"> CSV URL </label>
+    <input
+      class="ld-url-input"
+      type="text"
+      [value]="urlInput"
+      (change)="onUrlInputChange($event)"
+    />
+  </div>
+</div>
