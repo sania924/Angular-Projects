@@ -13,23 +13,119 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-4">
-      <a class="nav-item nav-link active" routerLink="ifelse"> if/else</a>
+      <!-- <a class="nav-item nav-link active" routerLink="ifelse"> if/else</a>
       <a class="nav-item nav-link active" routerLink="ngclass-ngstyle"
         >ngClass and ng Style</a
+      > -->
+
+      <!-- dropdowncode start -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-      <a class="nav-item nav-link active" routerLink="templateform"
-        >Template Form</a
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Structural Directive
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <a class="dropdown-item" routerLink="">if/else</a>
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="ngclass-ngstyle"
+                  >ngClass-ngStyle</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- dropdown code end -->
+      <!-- dropdowncode start -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-      <a class="nav-item nav-link active" routerLink="reactiveform"
-        >Reactive Form</a
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Form
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li>
+                <a class="dropdown-item" routerLink="templateform"
+                  >Template Form</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="reactiveForm"
+                  >Reactiive Form</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- dropdown code end -->
+
+      <!-- dropdowncode start -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
-      <a class="nav-item nav-link active" routerLink="barchart">Barchart</a>
-      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Api intergration
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" routerLink="get-api">Get Api</a></li>
+              <li><a class="dropdown-item" href="post-api">Post Api</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- dropdown code end -->
     </div>
   </div>
 </nav>
 
-<!-- <app-ifelse /> -->
-<!-- <app-ngclass-ngstyle /> -->
-<!-- <app-tables></app-tables> -->
 <router-outlet />

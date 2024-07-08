@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReactiveformComponent } from './reactiveform.component';
+import { GetApiComponent } from './get-api.component';
 
-describe('ReactiveformComponent', () => {
-  let component: ReactiveformComponent;
-  let fixture: ComponentFixture<ReactiveformComponent>;
+describe('GetApiComponent', () => {
+  let component: GetApiComponent;
+  let fixture: ComponentFixture<GetApiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ReactiveformComponent]
+      imports: [GetApiComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ReactiveformComponent);
+    fixture = TestBed.createComponent(GetApiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
