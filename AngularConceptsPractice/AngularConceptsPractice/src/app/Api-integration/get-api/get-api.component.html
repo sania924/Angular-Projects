@@ -1,3 +1,12 @@
+<app-alert
+  [message]="'resuse component from alert'"
+  [alerttype]="'Info'"
+></app-alert>
+<!-- @output -->
+<app-button
+  [btnText]="'Save Records'"
+  [btnClasses]="'btn btn-success'"
+></app-button>
 <p>get-api works!</p>
 <!-- <button (click)="getalluser()">click</button> -->
 <ul *ngFor="let item of users">
