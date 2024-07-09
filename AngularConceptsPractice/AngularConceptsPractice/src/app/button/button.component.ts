@@ -13,5 +13,7 @@ export class ButtonComponent {
   @Input() btnText: string = '';
   @Input() btnClasses: string = '';
   @Output() onbtnclick = new EventEmitter<any>();
-  onClick() {}
+  onClick() {
+    this.onbtnclick.emit('hi im from child');
+  }
 }

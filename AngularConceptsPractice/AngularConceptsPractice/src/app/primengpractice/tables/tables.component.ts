@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Product } from '../modals/product';
 import { ProductService } from '../product.service';
 import { map } from 'rxjs';
+import { RouterLink } from '@angular/router';
 
 interface Column {
   field: string;
@@ -12,7 +13,7 @@ interface Column {
 @Component({
   selector: 'app-tables',
   standalone: true,
-  imports: [TableModule, CommonModule],
+  imports: [TableModule, CommonModule, RouterLink],
   templateUrl: './tables.component.html',
   styleUrl: './tables.component.scss',
 })
