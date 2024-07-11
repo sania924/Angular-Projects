@@ -9,7 +9,7 @@ import { FromeventService } from '../../services/service/fromevent.service';
 })
 export class CustomObservableComponent implements OnInit {
   techStatus: string = '';
-  customObservable: Observable<string>;
+  customObservable: Observable<string>; //step 1
 
   constructor(private service: FromeventService) {
     this.customObservable = new Observable((observer) => {
@@ -26,6 +26,7 @@ export class CustomObservableComponent implements OnInit {
       }, 4000);
       setTimeout(() => {
         observer.next('react value');
+        observer.error(new Error('limit exced'));
       }, 5000);
       setTimeout(() => {
         observer.next('vue value');

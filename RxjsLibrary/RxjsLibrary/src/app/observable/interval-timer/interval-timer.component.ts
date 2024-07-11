@@ -40,3 +40,10 @@ export class IntervalTimerComponent implements OnInit {
   }
 }
 // TImer same but use timer instead of interval timer take 2 arguments delay and interval and interval take 1 argument
+// 1) create varible to hold timer or interval
+// 2) use timer instead of interval
+// 3) subscribe with delay and interval
+// 4) unsubscribe if condition met
+// 5) in subscribe use res to hold data
+// 6) use service function for append item to each container
+// 7) condition to unsubscribe if condition met

@@ -19,7 +19,7 @@ export class FromEventComponent implements AfterViewInit, OnInit {
   @ViewChild('addBtn') addBtn!: ElementRef; //step2 to fetch templete reference to viewchild fr changing dom elements
   ngAfterViewInit(): void {
     //step 3 use this hook for viewchild
-    let Count: number = 1; //take a coount varable
+    let Count: number = 1; //take a coount variable
     fromEvent(this.addBtn.nativeElement, 'click').subscribe((res) => {
       //step4 use fromevent takes 2 value 1:target and 2: event  ==> use this event instead of hostlister
       let countVal = 'video ' + Count++; //step7
@@ -48,3 +48,11 @@ export class FromEventComponent implements AfterViewInit, OnInit {
     document.getElementById(containerId)?.appendChild(el); // apendchild for multiple id
   }
 }
+// From event is used instead of hostlistner and we can't use ngfor for observable stream we use apeendchild for that
+// 1) access button in ts use templeate reference variable
+// 2) use view child to access btn
+// 3) fromevent take 2 parameter 1) target that is button and 2nd is event use click
+// 4) create ul with id
+// 5) use apeend child of li to add list dynamically
+// 6) apendchild take 2 parameter use 1 is variable and 2nd is id
+//

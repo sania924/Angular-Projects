@@ -58,3 +58,5 @@ export class OfandfromComponent implements OnInit {
     });
   }
 }
+// of convert argument into observable stream like string value or object
+//  from convert array.promise,string into observable stream
