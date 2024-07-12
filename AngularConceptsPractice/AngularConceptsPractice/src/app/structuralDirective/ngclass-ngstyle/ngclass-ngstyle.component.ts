@@ -1,11 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from '../../includes/header/header.component';
 
 @Component({
   selector: 'app-ngclass-ngstyle',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterLink,
+    RouterOutlet,
+    HeaderComponent,
+  ],
   templateUrl: './ngclass-ngstyle.component.html',
   styleUrl: './ngclass-ngstyle.component.scss',
 })

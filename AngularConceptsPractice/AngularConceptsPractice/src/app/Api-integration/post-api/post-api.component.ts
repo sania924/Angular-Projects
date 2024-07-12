@@ -3,8 +3,9 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { AlertComponent } from '../../alert/alert.component';
-import { ButtonComponent } from '../../button/button.component';
+import { AlertComponent } from '../../angularConceptsPractice/alert/alert.component';
+import { ButtonComponent } from '../../angularConceptsPractice/button/button.component';
+import { HeaderComponent } from '../../includes/header/header.component';
 
 @Component({
   selector: 'app-post-api',
@@ -16,6 +17,7 @@ import { ButtonComponent } from '../../button/button.component';
     CommonModule,
     AlertComponent,
     ButtonComponent,
+    HeaderComponent,
   ],
   templateUrl: './post-api.component.html',
   styleUrl: './post-api.component.scss',

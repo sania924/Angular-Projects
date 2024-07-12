@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { TableModule } from 'primeng/table';
 import { CommonModule } from '@angular/common';
 import { Product } from '../modals/product';
 import { ProductService } from '../product.service';
 import { map } from 'rxjs';
 import { RouterLink } from '@angular/router';
+import { SharedModule } from '../shared/shared.module';
+import { TableModule } from 'primeng/table';
 
 interface Column {
   field: string;
@@ -13,7 +14,7 @@ interface Column {
 @Component({
   selector: 'app-tables',
   standalone: true,
-  imports: [TableModule, CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, SharedModule, TableModule],
   templateUrl: './tables.component.html',
   styleUrl: './tables.component.scss',
 })
