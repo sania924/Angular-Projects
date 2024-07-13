@@ -11,6 +11,7 @@ import { PrimengpracticeComponent } from './primengpractice/primengpractice/prim
 import { HeaderComponent } from './includes/header/header.component';
 import { TablesComponent } from './primengpractice/tables/tables.component';
 import { TemplatetableComponent } from './primengpractice/tables/templatetable/templatetable.component';
+import { ViewchildComponent } from './angularConceptsPractice/decorators/viewchild/viewchild.component';
 
 export const routes: Routes = [
   { path: '', component: IfelseComponent },
@@ -22,6 +23,8 @@ export const routes: Routes = [
   { path: 'reactiveForm', component: ReactiveFormComponent },
   { path: 'get-api', component: GetApiComponent },
   { path: 'post-api', component: PostApiComponent },
+  { path: 'viewchild', component: ViewchildComponent },
+
   { path: 'alert', component: AlertComponent }, //for @input
   { path: 'button', component: ButtonComponent }, //for @output
   {
