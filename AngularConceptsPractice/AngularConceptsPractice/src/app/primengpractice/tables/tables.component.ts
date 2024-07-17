@@ -24,16 +24,16 @@ export class TablesComponent implements OnInit {
   cols!: Column[];
 
   ngOnInit(): void {
-    this.productService
-      .getProductsMini()
-      .pipe(
-        map((products) =>
-          products.filter((product) => parseInt(product.id) % 2 == 0)
-        )
-      )
-      .subscribe((data) => {
-        this.products = data;
-      });
+    // this.productService
+    //   .getProductsMini()
+    //   .pipe(
+    //     map((products) =>
+    //       products.filter((product) => parseInt(product.id) % 2 == 0)
+    //     )
+    //   )
+    //   .subscribe((data) => {
+    //     this.products = data;
+    //   });
     this.cols = [
       { field: 'id', header: 'Id' },
       { field: 'code', header: 'Code' },

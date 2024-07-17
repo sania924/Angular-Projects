@@ -369,12 +369,7 @@ export class ProductService {
       },
     ];
   }
-  // getProductsMini() {
-  //   return Promise.resolve(this.getProductsData().slice(0, 5));
-  // }
-  getProductsMini() {
-    return of(this.getProductsData().slice(0, 20));
-  }
+
   getProductsWithOrdersData() {
     return [
       {
@@ -1207,6 +1202,10 @@ export class ProductService {
         ],
       },
     ];
+  }
+
+  getProductsMini() {
+    return Promise.resolve(this.getProductsData().slice(0, 5));
   }
 
   getProductsMini2() {
