@@ -11,6 +11,8 @@ import { PrimengpracticeComponent } from './primengpractice/primengpractice/prim
 import { HeaderComponent } from './includes/header/header.component';
 import { TablesComponent } from './primengpractice/tables/tables.component';
 import { TemplatetableComponent } from './primengpractice/tables/templatetable/templatetable.component';
+import { ResponsivetableComponent } from './primengpractice/tables/responsivetable/responsivetable.component';
+
 import { ViewchildComponent } from './angularConceptsPractice/decorators/viewchild/viewchild.component';
 
 export const routes: Routes = [
@@ -33,6 +35,7 @@ export const routes: Routes = [
     children: [
       { path: 'tables', component: TablesComponent },
       { path: 'templatetable', component: TemplatetableComponent },
+      { path: 'responsivetable', component: ResponsivetableComponent },
     ],
   },
   { path: '', redirectTo: '/primengpractice', pathMatch: 'full' }, // Default redirect
