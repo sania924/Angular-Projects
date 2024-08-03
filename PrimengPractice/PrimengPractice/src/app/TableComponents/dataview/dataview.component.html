@@ -1,0 +1,134 @@
+<div class="container-fluid">
+  <!-- Heading for the DataView component -->
+  <h5 class="mt-4">
+    DataView Component:
+    <span
+      >DataView displays data in grid or list layout with pagination and sorting
+      features.</span
+    >
+  </h5>
+  <div class="row mt-4">
+    <div class="col">
+      <div class="card">
+        <!-- PrimeNG DataView component binding the 'products' array to 'value' with pagination enabled -->
+        <p-dataView #dv [value]="products" [rows]="5" [paginator]="true">
+          <!-- Template for list view -->
+          <ng-template pTemplate="list" let-products>
+            <div class="grid grid-nogutter">
+              <!-- Looping through each product in the products array -->
+              <div
+                class="col-12"
+                *ngFor="let item of products; let first = first"
+                class="col-12"
+              >
+                <div
+                  class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3"
+                  [ngClass]="{ 'border-top-1 surface-border': !first }"
+                >
+                  <!-- Product image section -->
+                  <div class="md:w-10rem relative">
+                    <img
+                      class="block xl:block mx-auto border-round w-full"
+                      [src]="
+                        'https://primefaces.org/cdn/primeng/images/demo/product/' +
+                        item.image
+                      "
+                      [alt]="item.name"
+                    />
+                    <!-- PrimeNG Tag component displaying the inventory status -->
+                    <p-tag
+                      [value]="item.inventoryStatus"
+                      [severity]="getSeverity(item)"
+                      class="absolute"
+                      [style.left.px]="4"
+                      [style.top.px]="4"
+                    />
+                  </div>
+                  <!-- Product details section -->
+                  <div
+                    class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4"
+                  >
+                    <div
+                      class="flex flex-row md:flex-column justify-content-between align-items-start gap-2"
+                    >
+                      <div>
+                        <!-- Product category -->
+                        <span class="font-medium text-secondary text-sm">{{
+                          item.category
+                        }}</span>
+                        <!-- Product name -->
+                        <div class="text-lg font-medium text-900 mt-2">
+                          {{ item.name }}
+                        </div>
+                      </div>
+                      <!-- Product rating section -->
+                      <div class="surface-100 p-1" style="border-radius: 30px">
+                        <div
+                          class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2"
+                          style="
+                            border-radius: 30px;
+                            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04),
+                              0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+                          "
+                        >
+                          <!-- Product rating value -->
+                          <span class="text-900 font-medium text-sm">{{
+                            item.rating
+                          }}</span>
+                          <!-- Star icon for rating -->
+                          <i class="pi pi-star-fill text-yellow-500"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product price and action buttons -->
+                    <div class="flex flex-column md:align-items-end gap-5">
+                      <!-- Product price -->
+                      <span class="text-xl font-semibold text-900">{{
+                        "$" + item.price
+                      }}</span>
+                      <div class="flex flex-row-reverse md:flex-row gap-2">
+                        <!-- Favorite button -->
+                        <p-button icon="pi pi-heart" [outlined]="true" />
+                        <!-- Buy Now button, disabled if the product is out of stock -->
+                        <p-button
+                          icon="pi pi-shopping-cart"
+                          class="flex-auto md:flex-initial white-space-nowrap"
+                          label="Buy Now"
+                          [disabled]="item.inventoryStatus === 'OUTOFSTOCK'"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </p-dataView>
+      </div>
+    </div>
+  </div>
+</div>
+<hr />
+<!-- //////////////////// order list //////////////////////////// -->
+<div class="row mt-4">
+  <h5>Timeline Component</h5>
+  <div class="col">
+    <div class="card flex flex-wrap gap-6">
+      <p-timeline [value]="events" class="w-full md:w-20rem">
+        <ng-template pTemplate="content" let-event>
+          {{ event.status }}
+        </ng-template>
+      </p-timeline>
+      <p-timeline [value]="events" class="w-full md:w-20rem" align="right">
+        <ng-template pTemplate="content" let-event>
+          {{ event.status }}
+        </ng-template>
+      </p-timeline>
+      <p-timeline [value]="events" class="w-full md:w-20rem" align="alternate">
+        <ng-template pTemplate="content" let-event>
+          {{ event.status }}
+        </ng-template>
+      </p-timeline>
+    </div>
+  </div>
+</div>

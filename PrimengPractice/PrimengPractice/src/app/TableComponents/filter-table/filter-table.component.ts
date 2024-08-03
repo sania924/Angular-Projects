@@ -3,7 +3,7 @@ import { Table } from 'primeng/table';
 import { Customer, Representative } from '../../models/customer';
 import { CustomerService } from '../../services/customer.service';
 import { SharedModule } from '../../sharedModule/shared.module';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -23,9 +23,13 @@ export class FilterTableComponent implements OnInit {
   statuses!: { label: string; value: string }[];
 
   loading: boolean = true;
-  value: FormControl = new FormControl(null); // Use FormControl for two-way binding
+  filterForm = new FormGroup({
+    representative: new FormControl(null),
+    status: new FormControl(null),
+  });
+  // value: FormControl = new FormControl(null); // Use FormControl for two-way binding
   activityValues: number[] = [0, 100];
-
+  value = '';
   constructor(private customerService: CustomerService) {}
 
   ngOnInit() {

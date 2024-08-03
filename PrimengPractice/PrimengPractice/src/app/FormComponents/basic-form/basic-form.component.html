@@ -1,0 +1,308 @@
+<div class="container-fluid">
+  <!-- Start Form Components -->
+  <h4 class="mt-4">Form Components</h4>
+  <!-- Auto Complete -->
+  <div class="row mt-4 align-items-center">
+    <h5>
+      1) AutoComplete Component: :<span
+        >AutoComplete is an input component that provides real-time suggestions
+        when being typed.
+      </span>
+    </h5>
+
+    <div class="col-3 align-items-center m-auto">
+      <h6>using reative form</h6>
+      <div class="flex justify-content-center">
+        <form [formGroup]="formGroup">
+          <p-autoComplete
+            placeholder="search country name"
+            formControlName="selectedCountry"
+            [suggestions]="filteredCountries"
+            (completeMethod)="filterCountry($event)"
+            field="name"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h6>using dropdown form</h6>
+
+      <div class="flex justify-content-center">
+        <p-autoComplete
+          placeholder="search"
+          [(ngModel)]="selectedCountry"
+          [dropdown]="true"
+          [suggestions]="filteredCountries"
+          (completeMethod)="dropdownCountry($event)"
+          field="name"
+        />
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h6>Custom template</h6>
+      <div class="flex justify-content-center">
+        <p-autoComplete
+          placeholder="custom search"
+          [(ngModel)]="selectedCountryAdvanced"
+          [suggestions]="filteredCountries"
+          (completeMethod)="customCountry($event)"
+          field="name"
+        >
+          <ng-template let-country pTemplate="item">
+            <div class="flex align-items-center gap-2">
+              <img
+                src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png"
+                [class]="'flag flag-' + country.code.toLowerCase()"
+                style="width: 18px"
+              />
+              <div>{{ country.name }}</div>
+            </div>
+          </ng-template>
+        </p-autoComplete>
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h6>Select Multiple</h6>
+      <div class="">
+        <span class="p-fluid">
+          <p-autoComplete
+            [(ngModel)]="selectedItems"
+            [suggestions]="items"
+            (completeMethod)="search($event)"
+            [multiple]="true"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- Auto Complete -->
+  <br />
+  <!-- start calender -->
+  <div class="row">
+    <h5>
+      2) Calendar Component: :<span
+        >Calendar is an input component to select a date.
+      </span>
+    </h5>
+    <div class="col-3 align-items-center m-auto">
+      <h5>using reactive form</h5>
+      <div class="flex justify-content-center">
+        <form [formGroup]="formGroup">
+          <p-calendar formControlName="date" placeholder="select date" />
+        </form>
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h5>using button icon</h5>
+      <div class="flex justify-content-center">
+        <p-calendar
+          [(ngModel)]="date1"
+          [showIcon]="true"
+          inputId="buttondisplay"
+          [showOnFocus]="false"
+        />
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h5>Date Template</h5>
+      <div class="flex justify-content-center">
+        <p-calendar [(ngModel)]="date">
+          <ng-template pTemplate="date" let-date>
+            <span
+              [ngStyle]="{
+                textDecoration:
+                  date.day < 21 && date.day > 10 ? 'line-through' : 'inherit'
+              }"
+            >
+              {{ date.day }}
+            </span>
+          </ng-template>
+        </p-calendar>
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h5>For Time only</h5>
+      <div class="flex justify-content-center">
+        <p-calendar
+          placeholder="select Time only"
+          inputId="calendar-timeonly"
+          [(ngModel)]="time"
+          [timeOnly]="true"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- end calender -->
+  <br />
+
+  <!-- checkbox -->
+  <div class="row">
+    <h5>3) Checkbox Components</h5>
+    <div class="col-3 align-items-center m-auto">
+      <p-checkbox [(ngModel)]="checked" [binary]="true" inputId="binary" />
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <form class="flex align-items-center gap-2" [formGroup]="formGroup">
+        <p-checkbox formControlName="city" value="New York" inputId="ny" />
+        <label for="ny">New York</label>
+      </form>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <form class="flex align-items-center" [formGroup]="formGroup">
+        <p-checkbox formControlName="city" value="New York" inputId="ny" />
+        <label for="ny">New York</label>
+      </form>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <form class="flex align-items-center" [formGroup]="formGroup">
+        <p-checkbox formControlName="city" value="New York" inputId="ny" />
+        <label for="ny">New York</label>
+      </form>
+    </div>
+  </div>
+  <!-- checkbox -->
+  <br />
+
+  <!-- Chip -->
+  <div class="row mt-4 align-items-center">
+    <h5>
+      4) Chip Component: :<span
+        >Chips is used to enter multiple values on an input field.
+      </span>
+    </h5>
+    <div class="col-5 align-items-center m-auto">
+      <h6>using ngModal</h6>
+
+      <div class="p-fluid">
+        <p-chips [(ngModel)]="values" />
+      </div>
+    </div>
+    <div class="col-5 align-items-center m-auto">
+      <h6>Using reactive form</h6>
+      <div class="p-fluid">
+        <p-chips formControlName="values" />
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto"></div>
+    <div class="col-3 align-items-center m-auto"></div>
+  </div>
+  <!-- chip -->
+  <br />
+  <!-- Dropdown -->
+  <div class="row">
+    <h5>
+      5) Dropdown Component<span
+        >Dropdown also known as Select, is used to choose an item from a
+        collection of options.
+      </span>
+    </h5>
+    <div class="col-3 align-items-center m-auto">
+      <h6>using reactive form</h6>
+      <div class="flex justify-content-center">
+        <p-dropdown
+          formControlName="selectedCity"
+          [options]="cities"
+          optionLabel="name"
+          placeholder="Select a City"
+        />
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h6>Using ngModal</h6>
+      <div class="flex justify-content-center">
+        <p-dropdown
+          [options]="cities"
+          [(ngModel)]="selectedCity"
+          optionLabel="name"
+          placeholder="Select a City"
+        />
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto"></div>
+    <div class="col-3 align-items-center m-auto"></div>
+  </div>
+  <!-- dropdown -->
+  <br />
+  <!-- float label,input group,text,textarea -->
+  <div class="row">
+    <div class="col-3 align-items-center m-auto">
+      <h5>6) Float label Component:</h5>
+      <div class="flex justify-content-center mt-3">
+        <p-floatLabel>
+          <input id="username" type="text" pInputText [(ngModel)]="value" />
+          <label for="username">Username</label>
+        </p-floatLabel>
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h5>7) InputGroup Component</h5>
+      <div class="mt-3">
+        <p-inputGroup>
+          <button
+            type="button"
+            pButton
+            icon="pi pi-check"
+            class="p-button-success"
+          ></button>
+          <input type="text" pInputText placeholder="Vote" />
+          <button
+            type="button"
+            pButton
+            icon="pi pi-times"
+            class="p-button-danger"
+          ></button>
+        </p-inputGroup>
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h6>InputText Component</h6>
+
+      <div class="flex justify-content-center">
+        <input type="text" pInputText formControlName="text" />
+      </div>
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <h6>Textarea component</h6>
+
+      <div class="flex justify-content-center">
+        <textarea rows="3" cols="30" pInputTextarea formControlName="text2">
+        </textarea>
+      </div>
+    </div>
+  </div>
+  <!-- float label -->
+  <br />
+  <div class="row">
+    <h5>Buttons Component</h5>
+    <div class="col-3 align-items-center m-auto">
+      <p-toggleButton formControlName="checked" onLabel="On" offLabel="Off" />
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <p-button label="Submit" class="mr-3" />
+      <button
+        pButton
+        pRipple
+        label="Submit"
+        class="p-button-success mr-3"
+      ></button>
+      <p-button label="Help" [raised]="true" severity="help" />
+    </div>
+    <div class="col-3 align-items-center m-auto">
+      <p-button icon="pi pi-heart" severity="help" class="mr-3" />
+      <p-button
+        icon="pi pi-bell"
+        [rounded]="true"
+        severity="warning"
+        class="mr-3"
+      />
+
+      <p-button
+        icon="pi pi-user"
+        [rounded]="true"
+        severity="info"
+        [outlined]="true"
+      />
+    </div>
+  </div>
+  <!-- End Form Components -->
+</div>

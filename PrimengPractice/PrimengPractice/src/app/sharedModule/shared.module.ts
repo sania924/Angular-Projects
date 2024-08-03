@@ -14,6 +14,40 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { DropdownModule } from 'primeng/dropdown';
 import { CustomerService } from '../services/customer.service';
+// ----------start  form components---------------- //
+import { AutoCompleteModule } from 'primeng/autocomplete';
+import { CalendarModule } from 'primeng/calendar';
+import { CountryService } from '../services/country.service';
+import { CheckboxModule } from 'primeng/checkbox';
+import { ChipsModule } from 'primeng/chips';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { InputSwitchModule } from 'primeng/inputswitch';
+
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { KnobModule } from 'primeng/knob';
+import { ToggleButtonModule } from 'primeng/togglebutton';
+
+//----------- end form components ---------------- //
+// -----------button----------------------------//
+import { RippleModule } from 'primeng/ripple';
+import { SplitButtonModule } from 'primeng/splitbutton';
+// ----------Data ------------------//
+
+import { DataViewModule } from 'primeng/dataview';
+import { PaginatorModule } from 'primeng/paginator';
+import { PanelModule } from 'primeng/panel';
+import { ToastModule } from 'primeng/toast';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { OrderListModule } from 'primeng/orderlist';
+import { TimelineModule } from 'primeng/timeline';
+import { DragDropModule } from '@angular/cdk/drag-drop'; // Adjust the path as needed
+import { TreeModule } from 'primeng/tree';
+import { TreeTableModule } from 'primeng/treetable';
+import { NodeService } from '../services/node.service';
+// --------------panel
+import { AccordionModule } from 'primeng/accordion';
 
 @NgModule({
   declarations: [],
@@ -35,6 +69,34 @@ import { CustomerService } from '../services/customer.service';
     DropdownModule,
     HttpClientModule,
     TableModule,
+    // form component
+    AutoCompleteModule,
+    CalendarModule,
+    CheckboxModule,
+    ChipsModule,
+    FloatLabelModule,
+    InputGroupModule,
+    InputGroupAddonModule,
+    InputSwitchModule,
+    InputTextareaModule,
+    KnobModule,
+    ToggleButtonModule,
+    // button component
+    RippleModule,
+    SplitButtonModule,
+    // Data--------------
+    DataViewModule,
+    PaginatorModule,
+    PanelModule,
+    ToastModule,
+    ConfirmDialogModule,
+    OrderListModule,
+    TimelineModule,
+    DragDropModule,
+    TreeModule,
+    TreeTableModule,
+    // Panel ---------------
+    AccordionModule,
   ],
   exports: [
     CommonModule,
@@ -54,7 +116,36 @@ import { CustomerService } from '../services/customer.service';
     DropdownModule,
     HttpClientModule,
     TableModule,
+
+    // form component
+    AutoCompleteModule,
+    CalendarModule,
+    CheckboxModule,
+    ChipsModule,
+    FloatLabelModule,
+    InputGroupModule,
+    InputGroupAddonModule,
+    InputSwitchModule,
+    InputTextareaModule,
+    KnobModule,
+    ToggleButtonModule,
+    // button component
+    RippleModule,
+    SplitButtonModule,
+    // Data--------------
+    DataViewModule,
+    PaginatorModule,
+    PanelModule,
+    ToastModule,
+    ConfirmDialogModule,
+    OrderListModule,
+    TimelineModule,
+    DragDropModule,
+    TreeModule,
+    TreeTableModule,
+    // panel------------
+    AccordionModule,
   ],
-  providers: [ProductService, CustomerService],
+  providers: [ProductService, CustomerService, CountryService, NodeService],
 })
 export class SharedModule {}
