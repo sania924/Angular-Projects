@@ -6,6 +6,9 @@ import { BasicFormComponent } from './FormComponents/basic-form/basic-form.compo
 import { DataviewComponent } from './TableComponents/dataview/dataview.component';
 import { TreetableComponent } from './TableComponents/treetable/treetable.component';
 import { PanelComponent } from './PanelComponents/panel/panel.component';
+import { AdvancePanelComponent } from './PanelComponents/advance-panel/advance-panel.component';
+import { MenubarComponent } from './MenuComponents/menubar/menubar.component';
+import { AdvanceMenuComponent } from './MenuComponents/advance-menu/advance-menu.component';
 
 export const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -16,4 +19,7 @@ export const routes: Routes = [
   { path: 'basic-form', component: BasicFormComponent },
   { path: 'treetable', component: TreetableComponent },
   { path: 'panel', component: PanelComponent },
+  { path: 'advance-panel', component: AdvancePanelComponent },
+  { path: 'menubar', component: MenubarComponent },
+  { path: 'advance-menu', component: AdvanceMenuComponent },
 ];

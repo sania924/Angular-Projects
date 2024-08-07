@@ -48,6 +48,19 @@ import { TreeTableModule } from 'primeng/treetable';
 import { NodeService } from '../services/node.service';
 // --------------panel
 import { AccordionModule } from 'primeng/accordion';
+import { CardModule } from 'primeng/card';
+import { AvatarModule } from 'primeng/avatar';
+import { MenuModule } from 'primeng/menu';
+import { StepperModule } from 'primeng/stepper';
+import { TabViewModule } from 'primeng/tabview';
+import { BadgeModule } from 'primeng/badge';
+import { ToolbarModule } from 'primeng/toolbar';
+// menu
+import { MenubarModule } from 'primeng/menubar';
+import { MegaMenuModule } from 'primeng/megamenu';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { StepsModule } from 'primeng/steps';
+import { TicketService } from '../services/ticket.service';
 
 @NgModule({
   declarations: [],
@@ -97,6 +110,18 @@ import { AccordionModule } from 'primeng/accordion';
     TreeTableModule,
     // Panel ---------------
     AccordionModule,
+    CardModule,
+    AvatarModule,
+    MenuModule,
+    StepperModule,
+    TabViewModule,
+    BadgeModule,
+    ToolbarModule,
+    // menu
+    MenubarModule,
+    MegaMenuModule,
+    BreadcrumbModule,
+    StepsModule,
   ],
   exports: [
     CommonModule,
@@ -145,7 +170,26 @@ import { AccordionModule } from 'primeng/accordion';
     TreeTableModule,
     // panel------------
     AccordionModule,
+    CardModule,
+    AvatarModule,
+    MenuModule,
+    StepperModule,
+    TabViewModule,
+    BadgeModule,
+    ToolbarModule,
+    // menu
+    MenubarModule,
+    MegaMenuModule,
+    BreadcrumbModule,
+
+    StepsModule,
   ],
-  providers: [ProductService, CustomerService, CountryService, NodeService],
+  providers: [
+    ProductService,
+    CustomerService,
+    CountryService,
+    NodeService,
+    TicketService,
+  ],
 })
 export class SharedModule {}
