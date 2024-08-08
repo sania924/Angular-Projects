@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { RatingModule } from 'primeng/rating';
-import { TagModule } from 'primeng/tag';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { ProductService } from '../services/product.service';
@@ -14,6 +13,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { DropdownModule } from 'primeng/dropdown';
 import { CustomerService } from '../services/customer.service';
+
 // ----------start  form components---------------- //
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { CalendarModule } from 'primeng/calendar';
@@ -61,7 +61,21 @@ import { MegaMenuModule } from 'primeng/megamenu';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { StepsModule } from 'primeng/steps';
 import { TicketService } from '../services/ticket.service';
+import { TabMenuModule } from 'primeng/tabmenu';
+// Misc
+import { AvatarGroupModule } from 'primeng/avatargroup';
+import { ChipModule } from 'primeng/chip';
+import { InplaceModule } from 'primeng/inplace';
+import { MeterGroupModule } from 'primeng/metergroup';
+import { ScrollTopModule } from 'primeng/scrolltop';
+import { SkeletonModule } from 'primeng/skeleton';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { TerminalModule } from 'primeng/terminal';
+import { TagModule } from 'primeng/tag';
 
+import { ProgressBarModule } from 'primeng/progressbar';
+// For dynamic progressbar demo
+// import { ToastModule } from 'primeng/toast';
 @NgModule({
   declarations: [],
   imports: [
@@ -122,6 +136,18 @@ import { TicketService } from '../services/ticket.service';
     MegaMenuModule,
     BreadcrumbModule,
     StepsModule,
+    TabMenuModule,
+    // misc
+    AvatarGroupModule,
+
+    ChipModule,
+    MeterGroupModule,
+    ScrollTopModule,
+    SkeletonModule,
+    ProgressSpinnerModule,
+    ProgressBarModule,
+    TerminalModule,
+    InplaceModule,
   ],
   exports: [
     CommonModule,
@@ -181,8 +207,18 @@ import { TicketService } from '../services/ticket.service';
     MenubarModule,
     MegaMenuModule,
     BreadcrumbModule,
-
+    TabMenuModule,
     StepsModule,
+    // misc
+    AvatarGroupModule,
+    ChipModule,
+    MeterGroupModule,
+    ScrollTopModule,
+    SkeletonModule,
+    ProgressSpinnerModule,
+    ProgressBarModule,
+    TerminalModule,
+    InplaceModule,
   ],
   providers: [
     ProductService,

@@ -3,6 +3,7 @@ import { SharedModule } from '../../sharedModule/shared.module';
 import { MenuItem, MessageService } from 'primeng/api';
 import { Subscription } from 'rxjs';
 import { TicketService } from '../../services/ticket.service';
+
 import {} from 'primeng/api';
 
 @Component({
@@ -11,14 +12,14 @@ import {} from 'primeng/api';
   imports: [SharedModule],
   templateUrl: './advance-menu.component.html',
   styleUrl: './advance-menu.component.scss',
+  providers: [MessageService, TicketService], // Add this line
 })
 export class AdvanceMenuComponent implements OnInit {
-  // items: MenuItem[] | undefined;
+  items: MenuItem[] = [];
+  items2: MenuItem[] | undefined;
+  activeItem: MenuItem | undefined;
 
-  // active: number = 0;
-  items!: MenuItem[];
-
-  subscription!: Subscription;
+  subscription: Subscription = new Subscription();
 
   constructor(
     public messageService: MessageService,
@@ -44,9 +45,16 @@ export class AdvanceMenuComponent implements OnInit {
         routerLink: 'confirmation',
       },
     ];
+    this.items2 = [
+      { label: 'Dashboard', icon: 'pi pi-home' },
+      { label: 'Transactions', icon: 'pi pi-chart-line' },
+      { label: 'Products', icon: 'pi pi-list' },
+      { label: 'Messages', icon: 'pi pi-inbox' },
+    ];
+    this.activeItem = this.items[0];
 
     this.subscription = this.ticketService.paymentComplete$.subscribe(
-      (personalInformation: { firstname: string; lastname: string }) => {
+      (personalInformation) => {
         this.messageService.add({
           severity: 'success',
           summary: 'Order submitted',
@@ -65,5 +73,8 @@ export class AdvanceMenuComponent implements OnInit {
     if (this.subscription) {
       this.subscription.unsubscribe();
     }
+  }
+  onActiveItemChange(event: MenuItem) {
+    this.activeItem = event;
   }
 }

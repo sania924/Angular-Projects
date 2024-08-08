@@ -9,6 +9,7 @@ import { PanelComponent } from './PanelComponents/panel/panel.component';
 import { AdvancePanelComponent } from './PanelComponents/advance-panel/advance-panel.component';
 import { MenubarComponent } from './MenuComponents/menubar/menubar.component';
 import { AdvanceMenuComponent } from './MenuComponents/advance-menu/advance-menu.component';
+import { MiscComponent } from './MiscComponents/misc/misc.component';
 
 export const routes: Routes = [
   { path: 'header', component: HeaderComponent },
@@ -22,4 +23,5 @@ export const routes: Routes = [
   { path: 'advance-panel', component: AdvancePanelComponent },
   { path: 'menubar', component: MenubarComponent },
   { path: 'advance-menu', component: AdvanceMenuComponent },
+  { path: 'misc', component: MiscComponent },
 ];
