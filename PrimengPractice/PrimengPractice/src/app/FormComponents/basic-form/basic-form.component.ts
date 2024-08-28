@@ -44,6 +44,8 @@ export class BasicFormComponent implements OnInit {
   cities: City[] | undefined;
 
   selectedCity: City | undefined;
+  selectedCity2: City | undefined;
+
   // float label
   value: string | undefined;
 
