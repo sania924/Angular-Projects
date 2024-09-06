@@ -49,6 +49,8 @@ export class BasicFormComponent implements OnInit {
   // float label
   value: string | undefined;
   value4: string | undefined;
+  value45: string | undefined;
+  value55: string | undefined;
 
   constructor(private countryService: CountryService) {}
 
