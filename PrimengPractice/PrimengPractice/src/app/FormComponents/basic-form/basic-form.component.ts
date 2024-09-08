@@ -51,6 +51,7 @@ export class BasicFormComponent implements OnInit {
   value4: string | undefined;
   value45: string | undefined;
   value55: string | undefined;
+  value65: string | undefined;
 
   constructor(private countryService: CountryService) {}
 
