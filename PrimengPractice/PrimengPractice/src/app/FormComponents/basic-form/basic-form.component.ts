@@ -127,3 +127,7 @@ export class BasicFormComponent implements OnInit {
     this.items = [...Array(10).keys()].map((item) => event.query + '-' + item);
   }
 }
+// function for random number
+function random() {
+  return Math.floor(Math.random() * 100) + 1;
+}
