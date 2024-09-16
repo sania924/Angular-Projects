@@ -26,6 +26,7 @@ export const routes: Routes = [
   { path: 'button', component: ButtonComponent }, //for @output
   { path: 'button', component: ButtonComponent }, //for @output
   { path: 'button', component: ButtonComponent }, //for @output
+  { path: 'button', component: ButtonComponent }, //for @output
 
   { path: '', redirectTo: '/primengpractice', pathMatch: 'full' }, // Default redirect
 ];
