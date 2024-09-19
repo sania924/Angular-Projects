@@ -21,7 +21,6 @@ export const routes: Routes = [
   { path: 'get-api', component: GetApiComponent },
   { path: 'post-api', component: PostApiComponent },
   { path: 'viewchild', component: ViewchildComponent },
-
   { path: 'alert', component: AlertComponent }, //for @input
   { path: 'button', component: ButtonComponent }, //for @output
   { path: 'button', component: ButtonComponent }, //for @output
