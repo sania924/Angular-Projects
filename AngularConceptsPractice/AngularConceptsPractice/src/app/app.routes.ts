@@ -10,6 +10,7 @@ import { ButtonComponent } from './angularConceptsPractice/button/button.compone
 import { HeaderComponent } from './includes/header/header.component';
 
 import { ViewchildComponent } from './angularConceptsPractice/decorators/viewchild/viewchild.component';
+import { PipeComponent } from './angularConceptsPractice/pipe/pipe.component';
 
 export const routes: Routes = [
   { path: '', component: IfelseComponent },
@@ -23,12 +24,7 @@ export const routes: Routes = [
   { path: 'viewchild', component: ViewchildComponent },
   { path: 'alert', component: AlertComponent }, //for @input
   { path: 'button', component: ButtonComponent }, //for @output
-  { path: 'button', component: ButtonComponent }, //for @output
-  { path: 'button', component: ButtonComponent }, //for @output
-  { path: 'button', component: ButtonComponent }, //for @output
-  { path: 'button', component: ButtonComponent }, //for @output
-  { path: 'button', component: ButtonComponent }, //for @output
-  { path: 'button', component: ButtonComponent }, //for @output
+  { path: 'pipe', component: PipeComponent }, //for @output
 
   { path: '', redirectTo: '/primengpractice', pathMatch: 'full' }, // Default redirect
 ];

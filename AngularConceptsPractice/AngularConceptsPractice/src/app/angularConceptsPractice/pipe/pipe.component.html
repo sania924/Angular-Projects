@@ -1,0 +1,67 @@
+<div class="mt-2 p-2 bg-secondary text-white rounded">
+  <h3>Pipe in Angular</h3>
+  <h4>Built in pipe and custom pipe</h4>
+</div>
+<div class="row">
+  <div class="col-3">
+    Orignal Value - {{ userName }}
+    <br />
+    uppercase pipe value-{{ userName | uppercase }}
+  </div>
+  <div class="col-3">
+    Orignal Value - {{ userName }}
+    <br />
+    pipe value-{{ userName | lowercase }}
+  </div>
+  <div class="col-3">
+    Orignal Value - {{ userName }}
+    <br />
+    titlecase pipe value-{{ userName | titlecase }}
+  </div>
+  <div class="col-3">
+    Orignal Value - {{ currentDate }}
+    <br />
+    fullDate pipe value-{{ currentDate | date }} pipe value -{{
+      currentDate | date : "fullDate"
+    }}
+  </div>
+  <div class="col-3">
+    Orignal Value - {{ value }}
+    <br />
+    decimal pipe value-{{ value | number : "1.2-2" }}
+  </div>
+  <!-- <div class="col-3">
+    Orignal Value - {{ value }}
+    <br />
+    combine multiple pipe value-
+    {{ value | number : "1.2-2" | currency : "USD" }}
+  </div> -->
+  <div class="col-3">
+    Orignal Value - {{ currentDate }}
+    <br />
+    full month pipe value-{{ currentDate | date : "dd-MMM-yy" }}
+  </div>
+  <div class="col-3">
+    Orignal Value - {{ currentDate }}
+    <br />
+    pipe value-{{ currentDate | date : "dd-MM-yy" }}
+  </div>
+  <div class="col-3">
+    Orignal Value - {{ currentDate }}
+    <br />
+    pipe value-{{ currentDate | date : "dd/MM/yy" }}
+  </div>
+  <div class="col-3">
+    Orignal Value - use for obj to show {{ student }}
+    <br />
+    json pipe value-{{ student | json }}
+  </div>
+  <!-- async pipe -->
+  <!-- <div class="col-3">
+
+    Orignal Value - use for obj to show {{ student }}
+    <br />
+    pipe value-{{ student | json }}
+  </div> -->
+  <p>Username: {{ "john doe" | capitalizeWords }}</p>
+</div>
