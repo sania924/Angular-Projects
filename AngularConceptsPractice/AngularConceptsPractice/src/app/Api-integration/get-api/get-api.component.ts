@@ -1,22 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
 import { AlertComponent } from '../../angularConceptsPractice/alert/alert.component';
 import { ButtonComponent } from '../../angularConceptsPractice/button/button.component';
-import { HeaderComponent } from '../../includes/header/header.component';
 
 @Component({
   selector: 'app-get-api',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    RouterLink,
-    CommonModule,
-    AlertComponent,
-    ButtonComponent,
-    HeaderComponent,
-  ],
+  imports: [CommonModule, AlertComponent, ButtonComponent],
   templateUrl: './get-api.component.html',
   styleUrl: './get-api.component.scss',
 })

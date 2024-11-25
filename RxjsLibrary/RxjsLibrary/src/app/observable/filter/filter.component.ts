@@ -48,7 +48,7 @@ export class FilterComponent implements OnInit {
     // ex-2 filter by nth item like id=6
     source
       .pipe(
-        filter((member) => member.id <= '3 + 1'),
+        filter((member) => member.id <= '3'),
         toArray()
       )
       .subscribe((res) => {
