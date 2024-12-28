@@ -10,7 +10,7 @@ import { SharedModule } from '../../sharedModule/shared.module';
 })
 export class PanelComponent implements OnInit {
   items: { label?: string; icon?: string; separator?: boolean }[] = [];
-
+  // ss
   ngOnInit() {
     this.items = [
       {
